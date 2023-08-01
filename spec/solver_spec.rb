@@ -10,4 +10,10 @@ describe Solver do
       @solver.should be_an_instance_of Solver
     end
   end
+
+  context 'factorial method' do
+    it 'takes one integer and returns factorial' do
+        expect(@solver.factorial(7)).to be == 5040
+    end
+  end
 end

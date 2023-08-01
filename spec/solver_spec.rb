@@ -26,4 +26,22 @@ describe Solver do
       expect(@solver.reverse('microverse')).to be == 'esrevorcim'
     end
   end
+
+  context 'fizzbuzz method' do
+    it 'takes an integer divisible by 3 and returns fizz' do
+      expect(@solver.fizzbuzz(9)).to be == 'fizz'
+    end
+
+    it 'takes an integer divisible by 5 and returns buzz' do
+      expect(@solver.fizzbuzz(10)).to be == 'buzz'
+    end
+
+    it 'takes an integer divisible by 3 and 5 and returns fizzbuzz' do
+      expect(@solver.fizzbuzz(15)).to be == 'fizzbuzz'
+    end
+
+    it 'takes an integer not divisible by 3 or 5 and returns the number as string' do
+      expect(@solver.fizzbuzz(7)).to be == '7'
+    end
+  end
 end

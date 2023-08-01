@@ -20,4 +20,10 @@ describe Solver do
       expect(@solver.factorial(0)).to be == 1
     end
   end
+
+  context 'reverse method' do
+    it 'takes a string and returns it reversed' do
+      expect(@solver.reverse('microverse')).to be == 'esrevorcim'
+    end
+  end
 end

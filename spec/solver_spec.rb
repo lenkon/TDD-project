@@ -13,7 +13,11 @@ describe Solver do
 
   context 'factorial method' do
     it 'takes one integer and returns factorial' do
-        expect(@solver.factorial(7)).to be == 5040
+      expect(@solver.factorial(7)).to be == 5040
+    end
+
+    it 'takes zero and returns 1' do
+      expect(@solver.factorial(0)).to be == 1
     end
   end
 end
